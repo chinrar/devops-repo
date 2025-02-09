@@ -180,19 +180,18 @@
 > ./script.sh
 
 > which python3
+# will give you this -> /usr/bin/python3
 ```
-will give you this
-/usr/bin/python3
 
 - shebang header
   - tells bash which interpreter to use to execute this file
   - starts with #!   
   - e.g.   
-    #!/usr/bin/python3
-    
+    #!/usr/bin/python3   
     then you can directly run python file using command
 ```bash
 > ./script.py
+
 # or even without extension, extension does not matter in linux
 > ./script
 ```
