@@ -38,4 +38,20 @@
 > sudo mv /tmp/website.tar .
 > sudo tar -xvf website.tar
 
+# reboot ec2 in ssh session
+> sudo reboot
+
+# How to ssh into private instance from public instance
+# Public instance used for this purpose is called jump box
+# You cannot store key for private instance in public instance that will give everyone access to private instance. Instead, you cache the key for private instance on your local machine. Forward that cached key to public instance while doing ssh into it then from public instance, ssh to private instance using cached key.
+
+# cache the key
+> ssh-add devops-key.pem
+
+# forward all the cached keys (to public instance)
+> ssh -A -i devops-key.pem ubuntu@183.23.123.12
+
+# form public instance, ssh to private instance using cached key
+> ssh -A ubuntu@123.12.123.23
+
 ```
