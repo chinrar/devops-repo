@@ -69,6 +69,25 @@ main.tf -> Terrform -> AWS Provider -> AWS SDK -> AWS Cloud
 
 ```
 
+## configure AWS CLI
+
+- create a IAM user in AWS management console
+- give admin privileges
+- create access key and secret key
+
+```bash
+
+# configure aws cli
+> aws configure
+
+# verify the aws cli configuration
+> aws configure list
+
+# verify if aws cli configured properly
+> aws s3 ls
+
+```
+
 ## configure the VS
 
 ```bash
