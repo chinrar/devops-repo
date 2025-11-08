@@ -44,7 +44,7 @@ group  --> group name and group id
 
 Types --
     Primary Group
-        - Every has exactly one primary group, it is mandatory
+        - Every user has exactly one primary group, it is mandatory
         - This group will own files created by that user
         - when you create new user, linux adds new group with same name
     Supplementary Group
